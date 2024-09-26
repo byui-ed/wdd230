@@ -27,8 +27,9 @@
         <h1>Bro. Otu Godwin</h1>
     </header>
 
+    <a id="menu" href="#"></a>
     <nav>
-        <ul>
+        <ul class="navigation">
             <li><a href="#" class="active">Home</a></li>
             <li><a href="#">Home</a></li>
             <li><a href="#">Chamber</a></li>
@@ -36,7 +37,7 @@
             <li><a href="#">Form</a></li>
         </ul>
     </nav>
-
+    <aside>
     <main>
         <h1>WDD 230: Web Frontend Development</h1>
         <div class="parent">
@@ -51,20 +52,36 @@
                     <li><a href="#">Week 05</a></li>
                     <li><a href="#">Week 06</a></li>
                 </ul>
+                <p>THE ABOVE LEARNING WEEKS ARE NUMBERED FROM ONE (1) TO SIX (6) THE CURRENT DATE MAKES INFORMATION CURRENT. </p>
             </section>
             <section>
                 <span>Information</span>
 
                 <p>Wheather Information</p>
+            
+                <div id="today1" class="step-reset step"></div>
+	<div id="today2" class="step"></div>
+	<div class="step"><label><strong>Quantity</strong>: <input type="text" id="q" size="3" value="44"></label></div>
+	<div class="step">Output to the first aside.</div>
+	<div class="step"><label><strong>Temperature</strong>: <input type="text" size="3" id="temp" readonly></label></div>
+	<div id="divs" class="step"></div>
+	<div id="c-names" class="step"></di
             </section>
         </div><!--end parent-->
+    
     </main>
+    </aside>
     <footer>
         <p>&copy; Otu Godwin | Nigeria</p>
 
         <p>🌍🧭</p>
     </footer>
+    <script src="scripts/menu.js"></script>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
     <script src="scripts/getDates.js"></script>
+    <script src="scripts/wheather.js"></script>
 </body>
 
 </html>

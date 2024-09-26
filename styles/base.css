@@ -1,3 +1,77 @@
+
+body {
+	font-family: Roboto, sans-serif;
+}
+
+#menu {
+	display: block;
+	font-size: 2rem;
+	font weight:700;
+	text-decoration: none;
+	padding: .5rem .75rem;
+	background-color: #eee;
+	color: #000;
+}
+
+#menu::before {
+	content: "≡";
+}
+
+nav {
+	background-color: tomato;
+}
+
+.navigation {
+	list-style: none;
+	margin: 0 auto;
+	max-width: 760px;
+
+}
+
+.navigation li {
+	display: none;
+}
+
+
+.navigation a:hover, navigation a:active {
+	color: white;
+	background-color: black;
+}
+
+.show li {
+	display: block;
+}
+
+#menu.show::before {
+	content: "x";
+}
+
+
+@media only screen and (min-width: 40em) {
+	.navigation {
+		display: flex;
+	}
+
+	.navigation li {
+		display: block; /* change state in small view*/
+		flex: 1 1 100%
+	}
+
+	.navigation a {
+		text-align: center;
+	}
+	menu {
+		display: none;
+	}
+}
+
+
+
+
+
+
+
+
 * {
 	margin: 0;
 	padding: 0;
@@ -109,3 +183,47 @@ h1 {
     border-bottom: 1px solid #000;
 }
 
+
+* {
+	box-sizing:border-box;
+}
+
+
+h2 {
+	margin-bottom: .5rem;
+}
+main {
+	border: 1px solid rgba(0,0,0,.1);
+	padding: 1rem;
+	background-color: #bed;
+	box-shadow: 0 0 20px rgba(0,0,0,.3);
+}
+
+div {
+	margin: 1rem;
+	border:1px solid rgba(0,0,0,.1);
+	padding: .5rem;
+	background-color:#eee;
+	font-size: smaller;
+}
+
+.step-reset {
+  counter-reset: step+3;
+}
+.step {
+  counter-increment: step;
+}
+.step::before {
+  content: '#' counter(step) ':  ';
+  color: green;
+}
+
+input {padding: .5rem;}
+
+aside{
+	margin: 1rem;
+	border: 1px solid rgba(0,0,0,.1);
+	padding: .5rem;
+	background-color: #ffeebb;
+	color: #000;
+}
