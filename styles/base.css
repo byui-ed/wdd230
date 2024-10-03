@@ -6,7 +6,7 @@ body {
 #menu {
 	display: block;
 	font-size: 2rem;
-	font weight:700;
+	font-weight:700;
 	text-decoration: none;
 	padding: .5rem .75rem;
 	background-color: #eee;
@@ -94,9 +94,12 @@ header {
 
 header,
 main {
-	margin: 0 auto;
-    
+	margin: 0 auto; 
 
+}
+
+header img {
+	border: 10px solid rgba(246, 250, 7, 0.1);
 }
 
 h1 {
@@ -227,3 +230,31 @@ aside{
 	background-color: #ffeebb;
 	color: #000;
 }
+
+.hero {
+	position: relative;
+}
+
+.hero img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.hero span {
+	position: absolute;
+	bottom: 40%;
+	left: 20px;
+	width: 400px;
+	background-color: rgba(255,255,255, 0.5);
+	padding: 1rem;
+	text-align: center;
+}
+
+iframe {
+	border:0;
+	width: 100%;
+	display: block;
+
+	}
+	
