@@ -13,3 +13,32 @@
     
     }/*end media query*/
     
+
+
+    /* Media Queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+    .sidebar {
+        width: 400px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    .sidebar {
+        width: 300px;
+    }
+}
