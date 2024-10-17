@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Wheather Map</title>
+    <meta name="description" content="WDD230 - Web Frontend Development - Otu Godwin Otu -course assignment portal">
+    <meta name="author" content="Otu Godwin Otu">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
+
+
+
+</head>
+<body>
+    
+    <h1>OpenWeatherMap.org API Test</h1>
+    <main>
+        <p>The current temperature in Trier, Germany is <span id="current-temp"></span></p>
+        <figure>
+            <img id="weather-icon" src="https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}" alt="weathermap">
+            <figcaption></figcaption>
+        </figure>
+    </main>
+    <footer>
+        [Otu Godwin] | OpenWeatherMap.org | CC BY-SA 4.0
+    </footer>
+
+    <script src="scripts/weather.js"></script>
+
+</body>
+</html>
